@@ -37,6 +37,14 @@ Retorno JSON
 	}
 ]
 ```
+**Lista Voos disponiveis**
+api/v1/AirPort/fligths?AeroOri=FLN&AeroDes=MCZ&Data=2019-02-10
+ONDE Obrigatorio:
+AeroOri = Aeroporto de origem EX: FLN
+AeroDes = Aeroporto de destino EX: MCZ
+Data = Data de viagem entre 2019-02-10 e 2019-02-18
+
+**Exemplo de Response:**
 
 ```json
 [
