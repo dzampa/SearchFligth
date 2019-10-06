@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SearchFligth</name>
+    </assembly>
+    <members>
+        <member name="M:SearchFligth.Controllers.AirPortController.GetAirPortJson">
+            <summary>
+            Retrieves aeroportos JSON
+            </summary>
+            <returns>A response with aeroportos JSON</returns>
+            <response code="200">Returns the aeroportos JSON list</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:SearchFligth.Controllers.AirPortController.GetFlightsList(System.String,System.String,System.DateTime)">
+            <summary>
+            Retrieves a list of available flight
+            </summary>
+            <param name="AeroOri">Origin airport </param>
+            <param name="AeroDes">Destiny airport </param>
+            <param name="Data">Data of Flight </param>
+            <returns>A response with List of Flights</returns>
+            <response code="200">Returns the List of Flights</response>
+            <response code="404">If Flight not exists</response>
+            <response code="500">If there was an internal server error</response>
+        </member>
+        <member name="M:SearchFligth.Functions.ReturnFlightList(System.String,System.String,System.DateTime,System.Collections.Generic.List{SearchFligth.NineNinePlanes},System.Collections.Generic.List{SearchFligth.UberAir})">
+            <summary>
+            Retrieves a list of disponible flight
+            </summary>
+            <param name="_aeroOri">Origin airport </param>
+            <param name="_aeroDes">Destiny airport </param>
+            <param name="_data">Data of Flight </param>
+            <param name="listNine">"List of 99planes flight </param>
+            <param name="listUberAir">List of UberAir flight </param>
+            <returns>Return with List of disponible flight</returns>
+        </member>
+        <member name="M:SearchFligth.Functions.AriPortsList">
+            <summary>
+            Retrieves a list of AirPort
+            </summary>
+            <returns>Return with List of AirPort</returns>
+        </member>
+        <member name="M:SearchFligth.Functions.ReadJson">
+            <summary>
+            Retrieves a list of NineNinePlanes
+            </summary>
+            <returns>Return with List of NineNinePlanes</returns>
+        </member>
+        <member name="M:SearchFligth.Functions.FillStretchUberPlanes(SearchFligth.UberAir,SearchFligth.UberAir,SearchFligth.UberAir)">
+            <summary>
+            Retrieves a list of flight Trechos
+            </summary>
+            <param name="route2">class UberAir</param>
+            <param name="route1">class UberAir </param>
+            <param name="uberFlightD">class UberAir </param>
+            <returns>Return with List of flight Trechos</returns>
+        </member>
+        <member name="M:SearchFligth.Functions.FillFlightList(System.String,System.String,System.Collections.Generic.List{SearchFligth.Class.Trechos})">
+            <summary>
+            Retrieves a list of FlightList
+            </summary>
+            <param name="_aeroOri">Origin airport </param>
+            <param name="_aeroDes">Destiny airport </param>
+            <param name="listTrechos">List of Trechos </param>
+            <returns>Return with List of flight Trechos</returns>
+        </member>
+        <member name="M:SearchFligth.Functions.FillStretch99Planes(SearchFligth.NineNinePlanes,SearchFligth.NineNinePlanes,SearchFligth.NineNinePlanes)">
+            <summary>
+            Retrieves a list of flight Trechos
+            </summary>
+            <param name="route2">class NineNinePlanes</param>
+            <param name="route1">class NineNinePlanes </param>
+            <param name="nineFlightD">class NineNinePlanes </param>
+            <returns>Return with List of flight Trechos</returns>
+        </member>
+        <member name="M:SearchFligth.Functions.ReadUberAir">
+            <summary>
+            Retrieves a list of UberAir flight
+            </summary>
+            <returns>Return with List of UberAir Flights</returns>
+        </member>
+    </members>
+</doc>
